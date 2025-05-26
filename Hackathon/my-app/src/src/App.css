@@ -1,0 +1,66 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  color: #22223b;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
+.App-header {
+  background: none;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 2rem;
+  color: #22223b;
+  padding-top: 40px;
+}
+
+.App-link {
+  color: #7f5af0;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.App-link:hover {
+  color: #2cb67d;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: rgba(44, 83, 100, 0.10);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #7f5af0 0%, #2cb67d 100%);
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .App-header {
+    font-size: 1.2rem;
+    padding-top: 20px;
+  }
+}
+
+/* Optional: Make all Paper elements a bit more glassy by default */
+.MuiPaper-root {
+  background: rgba(255,255,255,0.92) !important;
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.12) !important;
+  border-radius: 18px !important;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.18);
+}
